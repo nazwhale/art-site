@@ -26,20 +26,45 @@ h1 {
 }
 
 /* header */
-#logo {
+.logo {
   background-color: blue;
   height: 15px;
   width: 15px;
-  margin-right: -10px;
   filter: drop-shadow(1px 1px 1px grey);
 }
 
-#logo-bottom {
+.logo:hover {
   background-color: blue;
   height: 15px;
   width: 15px;
-  margin-left: -10px;
   filter: drop-shadow(1px 1px 1px grey);
+
+  animation-name: vibrate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translate(0px, 10px);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translate(0, 0);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+#logo-top {
+  margin-right: -10px;
+}
+
+#logo-bottom {
+  margin-left: -10px;
 }
 
 /* artworks */
