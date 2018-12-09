@@ -1,3 +1,3 @@
 # art-site
 
-![Imgur](https://i.imgur.com/s23122O.png)
+![Imgur](https://i.imgur.com/5720oV7.png)
