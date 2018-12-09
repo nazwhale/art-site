@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+header .header-container {
+  display: flex;
+  margin: 20px 80px;
+}
+
+header p {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+/* header */
+#logo {
+  background-color: blue;
+  height: 15px;
+  width: 15px;
+  margin-right: -10px;
+  filter: drop-shadow(1px 1px 1px grey);
+}
+
+#logo-bottom {
+  background-color: blue;
+  height: 15px;
+  width: 15px;
+  margin-left: -10px;
+  filter: drop-shadow(1px 1px 1px grey);
+}
+
+/* artworks */
+
+/* use grid here for better overflow */
+.artwork-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 60px;
+}
+
+.artwork {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 310px;
+  width: 310px;
+  background-color: mediumseagreen;
+  margin: 20px;
+  padding: 20px;
+
+  filter: drop-shadow(2px 2px 2px grey);
+}
+
+.artwork:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 310px;
+  width: 310px;
+  background-color: mediumseagreen;
+  margin: 20px;
+  padding: 20px;
+
+  filter: drop-shadow(4px 4px 4px grey);
+}
